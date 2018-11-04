@@ -1,0 +1,3 @@
+def calculate_temperature(clicks):
+    temperature=40+(clicks%50)
+    return temperature
