@@ -1,6 +1,6 @@
 def calculate_temperature(clicks):
     temperature=40+(clicks%50)
-    text="The temperature is"
+    text="The temperature is "
     print(text,temperature)
     return
 #For each click variable, calculate the temperature and print it as shown in the instructions
