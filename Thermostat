@@ -1,3 +1,30 @@
 def calculate_temperature(clicks):
     temperature=40+(clicks%50)
-    return temperature
+    text="The temperature is"
+    print(text,temperature)
+    return
+#For each click variable, calculate the temperature and print it as shown in the instructions
+
+click_1 = 0
+# TODO calculate the temperature, and report it back to the user
+calculate_temperature(click_1)
+
+click_2 = 49
+# TODO calculate the temperature, and report it back to the user
+calculate_temperature(click_2)
+
+click_3 = 74
+# TODO calculate the temperature, and report it back to the user
+calculate_temperature(click_3)
+
+click_4 = 51
+# TODO calculate the temperature, and report it back to the user
+calculate_temperature(click_4)
+
+click_5 = -1
+# TODO calculate the temperature, and report it back to the user
+calculate_temperature(click_5)
+
+click_6 = 200
+# TODO calculate the temperature, and report it back to the user
+calculate_temperature(click_6)
