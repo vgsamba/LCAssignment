@@ -1,0 +1,38 @@
+"""mystmnt="we r here"
+def wordcount(arg):
+    spacecounter=0
+    for i in arg:
+        print(i)
+wordcount(mystmnt)"""
+
+mystmnt="we r here"
+"""def wordcount(arg):
+    spacecounter=1
+    for i in arg:
+        if i in arg:
+            spacecounter=spacecounter+1
+        return spacecounter"""
+              
+
+"""def wordcount(arg):
+    spacecounter=1
+    for i in arg:
+        if i==" ":
+            spacecounter=spacecounter+1
+        return spacecounter
+print(wordcount(mystmnt))"""
+
+mystmntlnth=int(len(mystmnt))
+def wordcount(arg1,arg2):
+    spacecounter=1
+    
+    for i in arg1:
+        for i in range(arg2):
+            if i ==" ":
+                spacecounter=spacecounter-1
+                
+        #return spacecounter
+        result=arg2-spacecounter
+    return result
+print(wordcount(mystmnt,mystmntlnth))
+#print(len(mystmnt))
