@@ -1,0 +1,22 @@
+def get_initials(fullname): 
+  
+    # split the string into a list  
+    words_in_name = fullname.split() 
+    new = "" 
+  
+    # traverse in the list  
+    for i in range(len(words_in_name)-1): 
+        s = words_in_name[i] 
+          
+        # adds the capital first character  
+        new += (s[0].upper()) 
+          
+    # lwords_in_name[-1] gives last item of list words_in_name. We 
+    # use title to print first character in 
+    # capital. 
+    #new += words_in_name[-1].title() 
+      
+    return new 
+# Driver code             
+fullname ="mohandas karamchand gandhi" 
+print(get_initials(fullname)) 
