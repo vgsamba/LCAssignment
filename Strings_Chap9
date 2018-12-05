@@ -1,0 +1,20 @@
+def analyze_text(text):
+    # Your code here
+    count_letter=0
+    count_e=0
+    for char in text:
+        if char.isalpha():
+            count_letter=count_letter+1
+        #return count_lower
+        #if char=="e" or char=="E":
+            #count_e=count_e+1        can use this if stmnt or the next count_e
+        #return count_upper
+    count_e=text.count("e")+text.count("E")
+    eCharscountPercent = str((count_e / count_letter)*100)  # if we remove str remaining 3 tests will pass
+    answer = "The text contains {count_letter} alphabetic characters, of which {count_e} ({eCharscountPercent}%) are 'e'."
+    answerformatted= answer.format(count_letter=count_letter,count_e=count_e,eCharscountPercent=eCharscountPercent)
+    return answerformatted
+# this print the result
+text1 = "Eeeee"
+answer1 = "The text contains 5 alphabetic characters, of which 5 (100.0%) are 'e'."
+print(analyze_text(text1))
