@@ -1,0 +1,16 @@
+def initial_of_name(c):
+    word_list = c.split(" ")
+    i = (len(word_list))
+    new_list = []
+    for w in range(0, i):  # this loop leaves last name and creates a new list.
+        word = word_list[w]
+        word = word[0:1].upper()  # sliced word into initial letter and turn 1st letter to uppercse
+        new_list.append(word)
+    #new_list.append(word_list[-1])  # added last name to the list before joining.
+    initial = ''.join(new_list)  #removed dot in '' to avoid in output
+    print("The initial of your name is {0}.".format(initial))
+    return
+
+
+name ="vanita" # we can use input stmet here
+initial_of_name(name)
